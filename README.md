@@ -33,7 +33,7 @@
 
 <b>Day 16 </b> : We will continue the above concepts with some practical examples , and then we will give some design pattern of how large application are built using functional programming 
 
-<b> Day 17 </b>: We will deal with Object Oriented way of Javascript .. Use of new keyword . Creating Construtors and Class in Javascript.Creating Objects in Javascript. Some Features coming in ES6 for the Object Oriented Programming in Javascript. We will discuss how javascript is shifting towards OOPs from Functional way.We will discuss use of bind and this in Javascript.
+<b> Day 17 </b>: We will deal with Object Oriented way of Javascript .. Use of new keyword . Creating Construtors and Class in Javascript.Creating Objects in Javascript. Some Features coming in ES6 for the Object Oriented Programming in Javascript. We will discuss how javascript is shifting towards OOPs from Functional way.We will discuss use of bind and this in Javascript.We will go with deep and shallow copy concepts in Javascipt.
 
 <b> Day 18:</b> We will discuss use of Prototypes in Javascript. Object creating using Prototypes. Use of __proto__ and Protoypes in Javascipt .. by showing it in console. how Different frameworks are built using this concept.
 
