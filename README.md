@@ -5,9 +5,9 @@
 
 <b>Day 2:</b> We will go with a code level implementation of Javascript ...Event(User Action) and how we can change the HTML and CSS . We need to discuss what is DOM tree and how the HTML,CSS and JS are rendered on the screen using it.
 
-<b>Day 3:</b> It will be covering the implementation of Simple Project Design which will be a color changer based on the user action and how we can implement it . How we can automate this color changing using setInterval and use of setTimeout.We will cover array concept in Javascipt here
-tu
-<b>Day 4 </b>: Design simple application that tells whether user is online or offline and based  that change the color of the button or div layout.Dealing with Custom Events in Javascript like MouseHover , Click , DoubleClick and other one.We can strict comparision in javascript.
+<b>Day 3:</b> It will be covering the implementation of Simple Project Design which will be a color changer based on the user action and how we can implement it . How we can automate this color changing using setInterval and use of setTimeout.We will cover array concept in Javascript here
+
+<b>Day 4 </b>: Design simple application that tells whether user is online or offline and based  that change the color of the button or div layout.Dealing with Custom Events in Javascript like MouseHover , Click , DoubleClick and other one.We can strict comparision in javascript.Difference between null and undefined
 
 <b>Day 5 </b>:We will continue with how Javascipt Propogates the event in the DOM tree. This day will be focused on function , while loop in javascript ...We will be designing a random color changer.
 
