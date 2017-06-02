@@ -1,0 +1,49 @@
+ body {
+        height: 100%;
+    }
+    
+    p {
+        font-size: 117%;
+        /*  2 of 70 */
+        border: 1px solid black;
+        width: 50%;
+        float: left;
+        padding: 10px 20px;
+        font-family: ubuntu;
+        /**   SCSS or SAAS**/
+    }
+    
+    header {
+        height: 20%;
+    }
+    
+    content {
+        height: 70%;
+        width: 90%;
+    }
+    
+    footer {
+        height: 10%;
+    }
+    
+    p.larger_font {
+        font-size: 117%;
+    }
+    
+    p.smaller_font {
+        font-weight: bold;
+    }
+    
+    
+    
+    button {
+        margin-top: 20%;
+        margin-left: 60px;
+        padding:5px 5px;
+
+    }
+
+    #img_popUp{
+        display: none;
+    }
+   

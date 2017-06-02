@@ -1,15 +1,15 @@
-<h3>This Course Will be a backbone for the javascript Course</h3>
+<h3>This Course Will be a backbone for the JAVASCRIPT Course</h3>
 
 <b>Day 1:</b> It will be focused on  What HTML,CSS and Javascript is and their scope in future
 
 
 <b>Day 2:</b> We will go with a code level implementation of Javascript ...Event(User Action) and how we can change the HTML and CSS . We need to discuss what is DOM tree and how the HTML,CSS and JS are rendered on the screen using it.
 
-<b>Day 3:</b> It will be covering the implementation of Simple Project Design which will be a color changer based on the user action and how we can implement it . How we can automate this color changing using setInterval
+<b>Day 3:</b> It will be covering the implementation of Simple Project Design which will be a color changer based on the user action and how we can implement it . How we can automate this color changing using setInterval and use of setTimeout.We will cover array concept in Javascipt here
+tu
+<b>Day 4 </b>: Design simple application that tells whether user is online or offline and based  that change the color of the button or div layout.Dealing with Custom Events in Javascript like MouseHover , Click , DoubleClick and other one.We can strict comparision in javascript.
 
-<b>Day 4 </b>: Design simple application that tells whether user is online or offline and based  that change the color of the button or div layout
-
-<b>Day 5 </b>: This day will be focused on function , while loop in javascript ...We will be designing a random color changer.
+<b>Day 5 </b>:We will continue with how Javascipt Propogates the event in the DOM tree. This day will be focused on function , while loop in javascript ...We will be designing a random color changer.
 
 <b>Day 6 </b>: This day we will cover for and do while loop with a simple application (Design awaited). We will cover how we can design a simple calculator using javascript.
 
@@ -37,10 +37,10 @@
 
 <b> Day 18:</b> We will discuss use of Prototypes in Javascript. Object creating using Prototypes. Use of __proto__ and Protoypes in Javascipt .. by showing it in console. how Different frameworks are built using this concept.
 
-<b> Day 19:</b> We will continue the above disussion with some cool project examples and implementation.After this we will discuss some ES6 features like let, const keyword. Arrows functions in JS . Generators in JS .Destructing in JS.
+<b> Day 19:</b> We will continue the above disussion with some cool project examples and implementation.After this we will discuss some ES6 features like let, const keyword. Arrows functions in JS . Generators in JS .Destructuring in JS.
 
 <b>Day 20:</b> This day we wil focus on Asynchronous Programming in JS.What are callbacks and callback hell. Use of Promises for callback rescue. then Using Generators for dealing with it, async and await in JS.
 
-<b>Day 21:</b> Today We will be some left-overs in Javascipt like Apply ,call and bind..Variable Scoping and hoisting . Then We will see Design Patterns Followed in Javascript mostly from reference from airbnb , google . Then We will see how we can detect performance , Timelines , Debugging and Other tools in Chrome Debugger.We will be dealing with AJAX call in Javascipt. 
+<b>Day 21:</b> Today We will be some left-overs in Javascipt like Apply ,call and bind..Variable Scoping and hoisting . Then We will see Design Patterns Followed in Javascript mostly from reference from airbnb , google . Then We will see how we can detect performance , Timelines , Debugging and Other tools in Chrome Debugger.We will be dealing with AJAX call in Javascript. 
 
-<b> Day 22:</b> This day we will continue the above Concepts and Discuss the various frameworks like ReactJS, Angular2 , Backbone JS etc that are driving the JS world.We will see how JQuery library helps in reducing the lines of code in JS and how it is much helpful. We will give a brief overview of NodeJS (Server Side Programming in JS)
+<b> Day 22:</b> This day we will continue the above Concepts and Discuss the various frameworks like ReactJS, Angular2 , Backbone JS ,KnockoutJS etc that are driving the JS world.We will see how JQuery library helps in reducing the lines of code in JS and how it is much helpful. We will give a brief overview of NodeJS (Server Side Programming in JS)
