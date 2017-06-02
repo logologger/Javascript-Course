@@ -4,3 +4,5 @@
 
 <p>User Enters number in Input field and then javascript shows up the answer.</p>
 
+<p>We covered topices like switch case here</p>
+

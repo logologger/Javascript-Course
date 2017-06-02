@@ -44,3 +44,6 @@
 <b>Day 21:</b> Today We will be some left-overs in Javascipt like Apply ,call and bind..Variable Scoping and hoisting . Then We will see Design Patterns Followed in Javascript mostly from reference from airbnb , google . Then We will see how we can detect performance , Timelines , Debugging and Other tools in Chrome Debugger.We will be dealing with AJAX call in Javascript. 
 
 <b> Day 22:</b> This day we will continue the above Concepts and Discuss the various frameworks like ReactJS, Angular2 , Backbone JS ,KnockoutJS etc that are driving the JS world.We will see how JQuery library helps in reducing the lines of code in JS and how it is much helpful. We will give a brief overview of NodeJS (Server Side Programming in JS)
+
+
+<i>Apart from this,we expect the candidate to be good in Algorithm design and Data structure..If in case he is a begineer in programming then we will cover some algo and problem solving using javascript</i>
