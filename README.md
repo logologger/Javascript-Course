@@ -1,4 +1,4 @@
-<h3>This Course Will be a backbone for the JAVASCRIPT Course</h3>
+<h3>This course will be a backbone for the JAVASCRIPT Course</h3>
 
 <b>Day 1:</b> It will be focused on  What HTML,CSS and Javascript is and their scope in future
 
