@@ -1,5 +1,5 @@
 
-input[type=text], input[type=age], input[type=email] {
+input[type=text], input[type=date], input[type=email] {
     width: 30%;
     padding: 12px;        
     font-size: 15px;
@@ -9,11 +9,13 @@ input[type=text], input[type=age], input[type=email] {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    margin-left: 16%;
 }
 input[type=age]{
      width: 30%;
     padding: 25px;        
     font-size: 15px;
+    margin-left: 15%;
 }
 input[type=button]{
     width: 15%;
@@ -28,4 +30,18 @@ input[type=button]{
 .dont_display{
     display: none;
     
+}
+
+#form{
+    margin-left:25%;
+   
+
+}
+
+input[type=email]{
+    margin-left: 20%;
+}
+
+input[type=date]{
+    margin-left:21%;
 }
