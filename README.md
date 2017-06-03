@@ -23,7 +23,7 @@
 
 <b>Day 11:</b> We have covered nearly all the basic Concepts of JS.Here we can cover all the javascript API that are provided by the browser like Date API, Location fetching API, navigator API, history API and may be Live Video API and Audio(Mircophone API).We will be dealing with browser Storage API (Local Storage, Session Storage and Cookies).
 
-<p><i>Assignment:</i><code>Design a Digital Clock</code></p>
+<p><i>Assignment:  </i><code>Design a Digital Clock</code></p>
 
 <b>Day 12:</b> Till now we have covered maximum of the concepts of the javasript.Now we will be dealing with IIFE (Immediately Invoked Function in javascript), Global Variables in Javascript and javascript handles them .. Scope of Variables in Javascript., We will be dealing with closure in Javascript.
 
