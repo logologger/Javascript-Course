@@ -1,0 +1,1 @@
+https://www.kirupa.com/html5/event_capturing_bubbling_javascript.htm

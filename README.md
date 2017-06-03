@@ -13,7 +13,7 @@
 
 <b>Day 6 </b>: This day we will cover for and do while loop with a simple application (Design awaited). We will cover how we can design a simple calculator using javascript.
 
-<b>Dat 7 </b>: This day we will cover the entire functionality of javascript calculator and how to use switch case in acheiving this.
+<b>Day 7 </b>: This day we will cover the entire functionality of javascript calculator and how to use switch case in acheiving this.
 
 <b>Day 8 : </b> This day we will cover how we can handle exceptions in Javascript and how the normal flow in javascript happens.How we can debug in chrome console and debugging in javascript happens.
 
@@ -21,7 +21,7 @@
 
 <b>Day 10: </b> This day we will deal with the Object creation in Javascript and JSON Objects in Javascript. Fetching values in JSON Object . Uses of them for data transfer .How it is used in MongoDB  for data storing.Form JSON Object Dynamically.
 
-<b>Day 11:</b> We have covered nearly all the basic Concepts of JS.Here we can cover all the javascript API that are provided by the browser like Date API, Location fetching API, navigator API, history API and may be Live Video API and Audio(Mircophone API).
+<b>Day 11:</b> We have covered nearly all the basic Concepts of JS.Here we can cover all the javascript API that are provided by the browser like Date API, Location fetching API, navigator API, history API and may be Live Video API and Audio(Mircophone API).We will be dealing with browser Storage API (Local Storage, Session Storage and Cookies)
 
 <b>Day 12:</b> Till now we have covered maximum of the concepts of the javasript.Now we will be dealing with IIFE (Immediately Invoked Function in javascript), Global Variables in Javascript and javascript handles them .. Scope of Variables in Javascript., We will be dealing with closure in Javascript.
 
@@ -45,5 +45,6 @@
 
 <b> Day 22:</b> This day we will continue the above Concepts and Discuss the various frameworks like ReactJS, Angular2 , Backbone JS ,KnockoutJS etc that are driving the JS world.We will see how JQuery library helps in reducing the lines of code in JS and how it is much helpful. We will give a brief overview of NodeJS (Server Side Programming in JS)
 
+<i><b>Service Workers</b> in Javascipt are extra topic that can be covered based on the time permissions.We can disucss about how to use them and various frameworks like Angular are using them to achieve better performance in the front end application</i>
 
 <i>Apart from this,we expect the candidate to be good in Algorithm design and Data structure..If in case he is a begineer in programming then we will cover some algo and problem solving using javascript</i>
