@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather of your city</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="loading.css">
+</head>
+<body>
+<!-- <h2>Current Weather of your city</h2> -->
+
+<p id="current_weather"><span class="ld ld-ring ld-spin"></span></p>
+<p><select id="all_city"></select></p>
+
+
+
+
+<div id="map"><span id="loader" class="ld ld-ring ld-spin"></div>
+
+
+<p id="error_api"></p>
+
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLsaLkHwNOdvyD_ucnpnpDdr8xpj1gBjg&callback=initMap">
+    </script>
+<script type="text/javascript" src="weather_script.js"></script>
+
+</html>

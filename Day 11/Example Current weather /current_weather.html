@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather of your city</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="loading.css">
+</head>
+
+<body>
+    <!-- REGISTRATION -->
+    <a href="#" onclick="register_function(event)">Click to Register</a>
+    <div id="register_box">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+        </div>
+        <div>
+            <label for="name">Email</label>
+            <input type="email" name="email" />
+        </div>
+        <div>
+            <label for="name">Password</label>
+            <input type="password" name="password" />
+        </div>
+        <button id="register" onclick="registered_success()">Register</button>
+    </div>
+    <!-- REGISTRATION ENDS-->
+    <div id="login_page">
+        <label for="name">Email</label>
+        <input type="email" name="email" />
+        <label for="name">Password</label>
+        <input type="password" name="password" />
+        <button id="login" onclick="dashboard_call()">Login</button>
+    </div>
+    <!--WEATHER ONE-->
+    <p id="current_weather">
+        <span class="ld ld-ring ld-spin"></span>
+    </p>
+
+
+    <div id="map_id"></div>
+
+
+    <!--WEATHER ONE ENDS-->
+    <!-- MAP -->
+    <div id="map">
+        <span id="loader" class="ld ld-ring ld-spin">
+    </div>
+	<!-- MAP ONE ENDS -->
+
+<p id="error_api"></p>
+
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLsaLkHwNOdvyD_ucnpnpDdr8xpj1gBjg&callback=initMap">
+    </script>
+<script type="text/javascript" src="weather_script.js"></script>
+
+</html>
+

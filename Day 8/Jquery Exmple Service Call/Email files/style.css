@@ -1,0 +1,13 @@
+#current_weather{
+	color:green;
+	font-size: 30px;
+	text-align: center;
+}
+
+#error_api{
+
+	color:red;
+	font-size: 30px;
+	text-align: center;
+
+}

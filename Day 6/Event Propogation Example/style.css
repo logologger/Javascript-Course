@@ -1,0 +1,13 @@
+div {
+    height: 100px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+p{
+	background-color:white
+}
+span{
+	background-color:red
+}
