@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h3>This course will be a backbone for the JAVASCRIPT Course</h3>
 
 <b>Day 1:</b> <p>It will be focused on  What HTML,CSS and Javascript is and their scope in future</p>
@@ -50,3 +51,7 @@
 <i><b>Service Workers</b> in Javascipt are extra topic that can be covered based on the time permissions.We can disucss about how to use them and various frameworks like Angular are using them to achieve better performance in the front end application</i>
 
 <i>Apart from this,we expect the candidate to be good in Algorithm design and Data structure..If in case he is a begineer in programming then we will cover some algo and problem solving using javascript</i>
+=======
+# bruno-oliveira.github.io
+Portfolio website
+>>>>>>> 93cfe66be5f1a383e508e30803cddbda2a8a4b3e

@@ -1,0 +1,64 @@
+<html>
+   
+   <head>
+      <title>AngularJS</title>
+   </head>
+   
+   <body>
+      <h1>Our First Angular App</h1>
+      
+      <div ng-app = "first_module">
+
+            <div ng-controller="first_controller">
+
+
+            First Controller
+
+                {{name}}
+
+
+            </div>
+
+            <div ng-controller="second_controller">
+
+            Second Controller
+
+                {{name}}
+
+
+            </div>
+              
+
+      </div>
+     </body>
+      
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+      <script type="text/javascript">
+        
+      var app=angular.module("first_module",[]);//Defined our module
+
+
+      //MVC --Model ---->Data 
+      //View --html
+      //Controller --binds View with Model
+
+
+
+      //MODEL ------------CONTROLLER ---------------->VIEW
+
+      app.controller("first_controller",function($scope){
+
+        $scope.name="Ajay";//Lets suppose any Json data was coming
+      });
+
+      app.controller("second_controller",function($scope){
+
+        $scope.name="Rajat";
+      })
+
+
+      </script>
+      
+   
+</html>

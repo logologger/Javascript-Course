@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>AngularJS</title>
+</head>
+
+<body>
+    <h1>Welcome to the page</h1>
+
+    <!-- Navigation Bar -->
+    <a href="/#/aboutus">About us</a>
+    <a href="/#/studentData">Student Data</a>
+    <a href="/#/classData">Class Data</a>
+   
+
+    <div ng-app="first_module">
+
+    <div ng-include='"templates/header.html"'>
+        <div ng-view>
+            ....Loading
+        </div>
+
+    </div>
+    <div ng-include='"templates/footer.html"'>
+    <footer>
+    	
+
+    	<b>CopyRight &copy; 2017</b>
+    </footer>
+
+    <!-- Angular App Ended -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="controller/first_controller.js"></script>
+<script type="text/javascript" src="class/class_controller.js"></script>
+
+</html>
+<!-- ngRoute Module - Navigate inside the application -->
