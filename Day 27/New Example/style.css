@@ -1,0 +1,12 @@
+
+
+.animate-enter , .animate-leave{
+    transition: 500ms ease-in all;
+    position: relative;
+}
+.animate-enter .animate-enter-active, .animate-leave{
+   left:0px;
+}
+.animate-enter .animate-leave-active, .animate-leave{
+   left:500px;
+}

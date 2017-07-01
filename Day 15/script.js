@@ -1,16 +1,17 @@
 $(document).ready(function() {
 
 
-setInterval(function(){
+// setInterval(function(){
+console.log("Before");
 
+//Jquery Ajax Call
+$.ajax({ //Asynchronous Call -- AJAX   -- Stack  --Task 1
 
-
-$.ajax({
-
-	url:"title.json",
+	url:"https://jsonplaceholder.typicode.com/photos",//server url
 	success:function(a){
 
-		$("#title").html(a.title);
+		//$("#title").html(a.title);
+        console.log("inside 1");
 
 
 	}
@@ -18,8 +19,28 @@ $.ajax({
 
 });
 
-},2000);
+console.log("After");
 
+// },2000);
+
+setInterval(function(){
+$.ajax({ //Asynchronous Call -- AJAX   -- Stack  --Task 2
+
+    url:"title.json",//server url  //data got loaded first
+    success:function(a){
+
+        $("#title").html(a.title);
+        $("img")[0].src=a.src1;
+        $("img")[1].src=a.src2;
+        $("img")[2].src=a.src3;
+        console.log("inside 2");
+
+
+    }
+
+
+});
+},2000);
 
 
 

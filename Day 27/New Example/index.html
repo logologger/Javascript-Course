@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <!-- Meta-Information -->
+    <title>Ng Animate Example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="My Personal Blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body ng-app="animation">
+    
+    <!-- Vendor: Javascripts -->
+
+    <input type="text" ng-model="search"/>
+    <button>filter</button>
+
+    <ul ng-controller="myCtrl">
+        
+        <li ng-animate="'animate'" ng-repeat="car in cars | filter:search">
+            
+            {{car}}
+        </li>
+    </ul>
+
+
+    <!-- Vendor: Angular, followed by our custom Javascripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script> 
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script> 
+   <script type="text/javascript" src="script.js"></script>
+   
+   
+</body>
+
+</html>
