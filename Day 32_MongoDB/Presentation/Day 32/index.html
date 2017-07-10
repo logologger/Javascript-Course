@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mongo DB</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>MongoDB -- M of MEAN Stack</section>
+            <section>Written in C and C++ making it much faster</section>
+            <section>NoSQL Database</section>
+            <section>Difference between SQL and NoSQL</section>
+            <section>
+                <section>Why MongoDB ?</section>
+                <section>MongoDB stores data in JSON-like documents that can vary in structure. </section>
+                <section>Related information is stored together for fast query access through the MongoDB query language.</section>
+                <section>MongoDB uses dynamic schemas, meaning that you can create records without first defining the structure, such as the fields or the types of their values.</section>
+            </section>
+            <section>
+                <section>BSON</section>
+                <section>BSON is the binary encoding of JSON-like documents that MongoDB uses when storing documents in collections. </section>
+                <section>It adds support for data types like Date and binary that aren't supported in JSON. ..</section>
+                <section> MongoDB represents JSON documents in binary-encoded format called BSON behind the scenes.</section>
+            </section>
+            <section>
+                <section>How is Data Stored in MongoDB using BSON ?</section>
+                <section>A given mongo database is broken up into a series of BSON files on disk, with increasing size up to 2GB. </section>
+                <section> MongoDB stores the data on the disk as BSON in your data path directory, which is usually /data/db</section>
+                <section>t is no problem to store 100MB videos in the database. For example,</section>
+                <section> MusicNation uses MongoDB to store its videos.</section>
+            </section>
+            <section>Enough About MongoDB .. Lets Dive into real terminology in MongoDB !</section>
+            <section>
+            	<section>Create Database </section>
+            	<section>use DatabaseName</section>
+            	<section><pre><code>use pizzaShop</code></pre></section>
+            	<section>See All DBs</section>
+            	<section>show dbs;</section>
+            </section>
+            <section>
+                <section>Collections </section>
+                <section>Similar to Tables in MySQL </section>
+                <section>A grouping of MongoDB documents. A collection is the equivalent of an RDBMS table. .</section>
+                <section>A collection exists within a single database. </section>
+                <section>Collections do not enforce a schema.</section>
+                <section>Lets create a Collection pizzahut..</section>
+                <section><pre><code>db.createCollection('pizzahut')</code></pre></section>
+                <section>Lets Create it with some options</section>
+                <section><pre><code>db.createCollection("pizzahut", { capped : true,  size : 
+   6142800, max : 10000 } )</code></pre></section>
+                <section>We don't have schema in MongoDB</section>
+                <section>What Schema ?</section>
+                <section>No prior Struture of our data</section>
+                <section>Data in MongoDB has a flexible schema.Documents in the same collection. They do not need to have the same set of fields or structure, and common fields in a collection's documents may hold different types of data.</section>
+                <section>What's Document then ?</section>
+            </section>
+            <section>
+                <section>Documents</section>
+                <section>MongoDB stores data records as BSON documents.</section>
+                <section> BSON is a binary representation of JSON documents, though it contains more data types than JSON.</section>
+                <section>Documents are similar to rows in MySQL</section>
+                <section>Lets create one then </section>
+                <section><pre><code>db.pizzahut.insert({name:'Cheese',price:'20$'});</code></pre></section>
+                <section>Bulk Insert</section>
+                <section><pre><code>
+                db.pizzahut.insert([
+                {name:'Cheese',price:'20$'}
+                ,{name:'HumBurger'},
+                {taste:'Chilly'}
+                ]);</code></pre></section>
+            </section>
+            <section>
+                <section>Query in MongoDB</section>
+                <section>Analogue to select statement in SQL</section>
+                <section><pre><code>db.pizzahut.find();</code></pre></section>
+                <section>Make it pretty </section>
+                <section><pre><code>db.pizzahut.find().pretty;</code></pre></section>
+                <section>Display in Sorted Order then</section>
+                <section><pre><code>db.pizzahut.find().sort({"name":-1});</code></pre></section>
+                <section>1 for Ascending Order and -1 for Descending Order</section>
+            </section>
+            <section>
+            	<section>Deleting a Document in MongoDB</section>
+            	<section><pre><code>db.pizzahut.remove({name:'Cheese'});</code></pre></section>
+            	<section>Delete Only 1 Record</section>
+            	<section><pre><code>db.pizzahut.remove({name:'Cheese'},1);</code></pre></section>
+            </section>
+            <section>
+            	<section>Projection in MongoDB</section>
+            	<section>Show only What you want to see  and hide the others</section>
+            	<section><pre><code>db.pizzahut.find({},{"name":1,_id:0})</code></pre></section>
+            </section>
+            <section>
+            	<section>Limit the Records</section>
+            	<section>Show only the First 5 Records</section>
+            	<section><pre><code>db.pizzahut.find({},{"name":1,_id:0}).limit(2)</code></pre></section>
+            </section>
+            <section>
+            	<section>Aggregation in MongoDB</section>
+            	<section>Similar to count ,sum in MySQL</section>
+            	<section><pre><code>db.pizzahut.aggregate([{$group:{_id:"$by_user",name:{$sum:1}}}]);
+</code></pre></section>
+            </section>
+            <section>Connect MongoDB with NodeJS</section>
+            <section>Install MongoDB Drivers</section>
+            <section><pre><code>npm install mongodb --save</code></pre></section>
+            <section><pre><code>var MongoClient = require('mongodb').MongoClient;
+
+
+MongoClient.connect("mongodb://localhost:27017/pizzahut", function (err, db) {
+   
+     if(err) throw err;
+
+     //Write databse Insert/Update/Query code here..
+                
+});</code></pre></section>
+
+<section><pre><code>db.collection('Persons', function (err, collection) {
+        
+        collection.insert({ id: 1, name: 'Pizzahut', cost: '50$' });
+        
+    });</code></pre></section>
+        </div>
+    </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [{
+            src: 'plugin/markdown/marked.js'
+        }, {
+            src: 'plugin/markdown/markdown.js'
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>AngularJS</title>
+</head>
+<body>
+    <h1>Our First Angular App</h1>
+    <div ng-app="first_module">
+        <div ng-controller="first_controller">
+            First Controller {{name}}
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script type="text/javascript">
+var app = angular.module("first_module", []);
+app.controller("first_controller", function($scope, $http) {
+    $scope.name = "Ajay";
+    $http.get('http://localhost:3000/')
+        .then(function(response) {
+            $scope.name = response.data.name;
+        })
+});
+</script>
+
+</html>

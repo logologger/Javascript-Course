@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Using ExpressJS in NodeJS</section>
+				<section>Install ExpressJS</section>
+				<section>npm install express</section>
+				<section><pre><code>var express = require('express')
+var app = express()
+ 
+app.get('/', function (req, res) {
+  res.send('Hello Ajay')
+})
+ 
+app.listen(3000)</code></pre></section>
+				<section>Lets Integerate FrontEnd with BackEnd</section>
+				<section>Front End -- AngularJS</section>
+				<section>BackEnd -- NodeJS </section>
+				<section>
+
+				<section>$http on Angular will talk with router on NodeJS
+				</section>
+				<section><pre><code>$http.get('http://localhost:3000/')
+    .then(function(response){
+
+      $scope.name=response.data.name;
+    })</code></pre></section>
+				</section>
+
+				<section>
+
+				Need to Use CORS Middleware on NodeJS Side to enable front-end from other port to use that nodeJS services
+				</section>
+
+				<section>Lets Start Some Coding</section>
+				<section>
+				<section>AngularJS</section>
+<section><pre><code>var express = require('express');
+var cors=require('cors');
+var app = express();
+
+app.use(cors());
+app.get('/', function(req, res) {
+
+	res.setHeader('Content-type','application/json');
+
+	var json={
+
+		name:'Ajay Gaddam'
+	};
+
+
+    res.json(json);
+});
+app.get('/google', function(req, res) {
+    res.send('Hello Google');
+});
+app.listen(3000);
+</code></pre></section>
+</section>
+
+<section>
+
+<section>NodeJS</section>
+<section>
+<pre><code>
+
+var app = angular.module("first_module", []);
+app.controller("first_controller", function($scope, $http) {
+    $scope.name = "Ajay";
+    $http.get('http://localhost:3000/')
+        .then(function(response) {
+            $scope.name = response.data.name;
+        })
+});
+
+
+
+
+</code></pre>
+</section>
+<section>Thanks ......</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
