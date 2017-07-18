@@ -1,0 +1,19 @@
+body{
+	background-image: url('../image/bg.jpg');
+    background-size: 120%;
+}
+.right_logo{
+	display: inline-block;
+
+}
+.right_logo img{
+	width: 98%;
+}
+.full_page_center{
+
+	display: inline-block;
+}
+.login_screen{
+	    width: 225%;
+
+}
