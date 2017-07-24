@@ -1,0 +1,16 @@
+{
+  "name": "chatappdemo",
+  "version": "1.0.0",
+  "description": "chat application using socket io and nodeS and angularJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rajat Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^1.4.6"
+  }
+}

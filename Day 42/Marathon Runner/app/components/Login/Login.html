@@ -1,0 +1,32 @@
+
+<div  ng-controller="LoginCtrl" class="register_style">
+    <div class="container_reg">
+        <div id="login_screen">
+            <div class="signup-screen">
+                <div class="space-bot text-center">
+                    <h1>Login to the Marathon</h1>
+                    <div class="divider"></div>
+                </div>
+                <form class="form-register" name="loginForm" method="post" name="register" novalidate>
+
+ <div class="input-field col s6">
+    <input id="email" type="email" class="validate" required ng-model="loginFormValue.email" name="email">
+     <label for="email">Email ID</label>
+</div>
+ <p class="alert alert-danger" ng-show="loginForm.email.$touched && loginForm.email.$invalid">Please Enter a Valid Email Address.</p>
+    <div class="input-field col s6">
+                        <input id="password" type="password" name="password" ng-model="loginFormValue.password" ng-minlength='6' class="validate" required>
+                        <label for="password">Password</label>
+    </div>
+                    <p class="alert alert-danger" ng-show="loginForm.password.$touched  && (loginForm.password.$error.minlength || loginForm.password.$invalid)">Your password must be at least 6 characters.</p>
+  <div class="space-top text-center">
+                        <button ng-click="checkLogin()" ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
+                            <i class="material-icons left">done</i> Login
+                        </button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
